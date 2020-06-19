@@ -1,0 +1,51 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card.spin-3d{
+    transform: perspective(600px) rotateY(360deg);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    backface-visibility: hidden;
+}
+
+.card{
+    transform: perspective(600px) rotateY(0deg);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    backface-visibility: hidden;
+    box-shadow: 0 0 1em #ccc;
+    height: auto;
+    margin: 10px 0;
+}
+
+#newside{
+    height: 412px;
+    display: none;
+    background: url(../img/bg-1.PNG)center/cover no-repeat;
+}
+
+.profile h6 a{
+    font-size: 14px;
+    color: #444;
+}
+
+.profile h6 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+#newside p{
+    color: #fff;
+    text-shadow: 0 0 1em rgba(68, 68, 68, 0.384);
+}
+
+
+@media screen and (max-width: 576px){
+/*     
+    .card .profile img{
+        width: 100px;
+        height: 100px;
+    
+    } */
+
+}
